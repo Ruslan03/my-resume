@@ -117,4 +117,10 @@ class Portfolio extends CI_Controller {
 		}
 		return implode(', ', $result);
 	}
+
+	public function download_resume(){
+		header('Content-Type: application/pdf');
+	    header('Content-disposition: attachment;filename=ruslan-resume.pdf');
+	    readfile('../assets/ruslan-resume.pdf');
+	}
 }
