@@ -121,6 +121,6 @@ class Portfolio extends CI_Controller {
 	public function download_resume(){
 		header('Content-Type: application/pdf');
 	    header('Content-disposition: attachment;filename=ruslan-resume.pdf');
-	    readfile('../assets/ruslan-resume.pdf');
+	    readfile('../assets/5224968.pdf');
 	}
 }
